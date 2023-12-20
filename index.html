@@ -18,7 +18,34 @@
     <div id="list">
       <h2>My Todos</h2>
       <ul id="tasks">
+        <li class="task">Task 1</li>
+        <li class="task">Task 2</li>
+        <li class="task">Task 3</li>
       </ul>
+    </div>
+    <div id="container">
+      <form action="add task">
+        <label for="userInput">User:</label>
+      <input type="text" id="userInput">
+
+      <label for="durationInput">Duration:</label>
+      <input type="text" id="durationInput">
+
+      <label for="dueDateInput">Due Date:</label>
+      <input type="date" id="dueDateInput">
+
+      <button onclick="addTask()">Add Task</button>
+      </form>
+    </div>
+    <div id="select color">
+      <form id="dropdown" action="choose-color" method="POST">
+        <label for="priorityDropdown">Select Priority:</label>
+        <select id="priorityDropdown">
+          <option value="high">High Priority</option>
+          <option value="medium">Medium Priority</option>
+          <option value="low">Low Priority</option>
+        </select>
+      </form>
     </div>
 
     <script src="./src/index.js"></script>
